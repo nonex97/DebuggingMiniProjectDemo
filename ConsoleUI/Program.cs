@@ -59,14 +59,7 @@ namespace ConsoleUI
         {
             int z = 5;
 
-            if (v == 0)
-            {
-                throw new ArgumentException("We cannot divide by zero", "v");
-            }
-            else
-            {
-                z = 3 / v;
-            }
+            z = 3 / v;
 
             return z;
         }
