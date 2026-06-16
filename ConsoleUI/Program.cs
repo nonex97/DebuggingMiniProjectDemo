@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            double i = W(0);
+            int i = W(0);
             Console.WriteLine(i);
             Console.ReadLine();
         }
