@@ -23,6 +23,7 @@ namespace ConsoleUI
             {
                 Console.WriteLine("An error occured.");
             }
+            Console.ReadLine();
         }
 
         private static double W(double e)
