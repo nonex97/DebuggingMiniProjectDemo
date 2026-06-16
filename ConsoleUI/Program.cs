@@ -10,9 +10,19 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            double i = W(0);
-            Console.WriteLine(i);
-            Console.ReadLine();
+            try
+            {
+                double i = W(0);
+                Console.WriteLine(i);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occured.");
+            }
         }
 
         private static double W(double e)
@@ -58,8 +68,14 @@ namespace ConsoleUI
         private static double R(double v)
         {
             double z = 5;
-
-            z = 3 / v;
+            if (v == 0)
+            {
+                throw new ArgumentException("We cannot divide by zero", "v");
+            }
+            else
+            {
+                z = 3 / v;
+            }
 
             return z;
         }
