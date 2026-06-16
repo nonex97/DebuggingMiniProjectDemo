@@ -10,19 +10,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            try
-            {
-                double i = W(45);
-                Console.WriteLine(i);
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Something went wrong.");
-            }
+            double i = W(0);
+            Console.WriteLine(i);
             Console.ReadLine();
         }
 
